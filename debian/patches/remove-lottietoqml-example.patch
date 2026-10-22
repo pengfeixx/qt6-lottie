@@ -1,0 +1,15 @@
+Description: remove lottietoqml example from build
+ The lottietoqml example depends on the internal Qt6LottieTools CMake
+ package which is not shipped, breaking the build (module-internal
+ bootstrap cycle). Drop it from the examples build; sources stay.
+Forwarded: not-needed
+Origin: cleanroom
+Last-Update: 2026-10-21
+
+--- a/examples/lottie/CMakeLists.txt
++++ b/examples/lottie/CMakeLists.txt
+@@ -2,4 +2,3 @@
+ # SPDX-License-Identifier: LicenseRef-Qt-Commercial OR BSD-3-Clause
+ 
+ qt_internal_add_example(qtlottieviewer)
+-qt_internal_add_example(lottietoqml)

@@ -1,3 +1,4 @@
-usr/lib/${DEB_HOST_MULTIARCH}/qt6/qml/Qt/labs/lottieqt/liblottieqtplugin.so
-usr/lib/${DEB_HOST_MULTIARCH}/qt6/qml/Qt/labs/lottieqt/plugins.qmltypes
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/qml/Qt/labs/lottieqt/Lottie.qmltypes
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/qml/Qt/labs/lottieqt/liblottieplugin.so
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/qml/Qt/labs/lottieqt/qmldir
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/plugins/vectorimageformats/libqlottievectorimage.so

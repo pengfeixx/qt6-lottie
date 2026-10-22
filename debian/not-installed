@@ -1,8 +1,6 @@
-usr/include/${DEB_HOST_MULTIARCH}/qt6/QtBodymovin/6.*
-usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginAdditionalTargetInfo.cmake
-usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginConfig.cmake
-usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginConfigVersion.cmake
-usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginConfigVersionImpl.cmake
-usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginTargets.cmake
-usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt6Qml/QmlPlugins/Qt6lottieqtpluginTargets-none.cmake
-usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_bodymovin_private.pri
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtLottie/6.*
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtLottieVectorImageGenerator/6.*
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtLottieVectorImageHelpers/6.*
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_lottie_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_lottievectorimagegenerator_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_lottievectorimagehelpers_private.pri

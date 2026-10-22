@@ -1,0 +1,19 @@
+# SymbolsHelper-Confirmed: 6.12.0 amd64
+libQt6LottieVectorImageHelpers.so.6 libqt6lottievectorimagehelpers6 #MINVER#
+* Build-Depends-Package: qt6-lottie-dev
+ NonQt@NonQt 6.12.0
+ Qt_6@Qt_6 6.12.0
+ Qt_6_PRIVATE_API@Qt_6_PRIVATE_API 6.12.0
+ _Z54qml_register_types_Qt_labs_lottieqt_VectorImageHelpersv@Qt_6 6.12.0
+ _ZN15QQuickLayerItem10itemChangeEN10QQuickItem10ItemChangeERKNS0_14ItemChangeDataE@Qt_6_PRIVATE_API 6.12.0
+ _ZN15QQuickLayerItem11qt_metacallEN11QMetaObject4CallEiPPv@Qt_6_PRIVATE_API 6.12.0
+ _ZN15QQuickLayerItem11qt_metacastEPKc@Qt_6_PRIVATE_API 6.12.0
+ _ZN15QQuickLayerItem15transformMatrixEv@Qt_6_PRIVATE_API 6.12.0
+ _ZN15QQuickLayerItem16staticMetaObjectE@Qt_6_PRIVATE_API 6.12.0
+ _ZN15QQuickLayerItem22transformMatrixChangedEv@Qt_6_PRIVATE_API 6.12.0
+ _ZN15QQuickLayerItemC1EP10QQuickItem@Qt_6_PRIVATE_API 6.12.0
+ _ZN15QQuickLayerItemC2EP10QQuickItem@Qt_6_PRIVATE_API 6.12.0
+ _ZNK15QQuickLayerItem10metaObjectEv@Qt_6_PRIVATE_API 6.12.0
+ _ZTI15QQuickLayerItem@Qt_6_PRIVATE_API 6.12.0
+ _ZTS15QQuickLayerItem@Qt_6_PRIVATE_API 6.12.0
+ _ZTV15QQuickLayerItem@Qt_6_PRIVATE_API 6.12.0

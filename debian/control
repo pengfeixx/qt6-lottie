@@ -1,61 +1,117 @@
 Source: qt6-lottie
 Section: libs
-Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Patrick Franz <deltaone@debian.org>, Lu YaNing <dluyaning@gmail.com>
-Build-Depends: cmake (>= 3.24~),
-               debhelper-compat (= 13),
+Uploaders: Patrick Franz <deltaone@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-pkgkde-symbolshelper,
+               dh-sequence-qmldeps,
+               cmake (>= 3.24~),
                libgl-dev,
                libssl-dev,
                libvulkan-dev [linux-any],
                ninja-build,
-               pkg-config,
                pkg-kde-tools,
-               qt6-base-dev (>= 6.8.0+dfsg~),
-               qt6-base-private-dev (>= 6.8.0+dfsg~),
-               qt6-declarative-dev (>= 6.8.0+dfsg~),
-               qt6-declarative-private-dev (>= 6.8.0+dfsg~),
-Standards-Version: 4.6.2
+               pkgconf,
+               qt6-base-dev (>= 6.11.2+dfsg~),
+               qt6-base-private-dev (>= 6.11.2+dfsg~),
+               qt6-declarative-dev (>= 6.11.2+dfsg~),
+               qt6-declarative-private-dev (>= 6.11.2+dfsg~),
+Standards-Version: 4.7.4
 Homepage: https://www.qt.io/developers/
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt6/qt6-lottie
 Vcs-Git: https://salsa.debian.org/qt-kde-team/qt6/qt6-lottie.git
-Rules-Requires-Root: no
 
-Package: libqt6bodymovin6
+Package: libqt6lottie6
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Qt 6 Lottie Bodymovin library
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Qt 6 Lottie library
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains a plugin created/exported directly from After Effects.
 
+Package: libqt6lottievectorimagehelpers6
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Qt 6 Lottie Vector Image Helpers library
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Qt 6 Lottie Vector Image Helpers library.
+
 Package: qml6-module-qt-labs-lottieqt
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: qml6-module-qtquick, ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${qml6:Depends},
+         ${shlibs:Depends},
 Description: Qt 6 Lottie QML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains a QML API for rendering graphics and animations
- that are exported in JSON format by the Bodymovin plugin for Adobe
+ that are exported in JSON format by the Lottie plugin for Adobe
  After Effects.
 
+Package: qml6-module-qt-labs-lottieqt-vectorimagehelpers
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${qml6:Depends},
+         ${shlibs:Depends},
+Description: Qt 6 Lottie Vector Image Helpers QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains a QML API for the Vector Image Helpers.
+
+Package: qt6-lottie-tools
+Section: libdevel
+Architecture: any
+Multi-Arch: foreign
+Depends: libqt6lottie6 (= ${binary:Version}),
+         libqt6lottievectorimagehelpers6 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Qt 6 Lottie tools
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the lottietoqml tool.
+
 Package: qt6-lottie-dev
-Provides: libqt6bodymovin6-dev (= ${binary:Version})
 Architecture: any
 Multi-Arch: same
 Section: libdevel
-Depends: libqt6bodymovin6 (= ${binary:Version}), qt6-base-dev, ${misc:Depends}
-Breaks: libqt6bodymovin6-dev (<< 6.4.1-2~)
-Replaces: libqt6bodymovin6-dev (<< 6.4.1-2~)
+Depends: libqt6lottie6 (= ${binary:Version}),
+         libqt6lottievectorimagehelpers6 (= ${binary:Version}),
+         qml6-module-qt-labs-lottieqt (= ${binary:Version}),
+         qml6-module-qt-labs-lottieqt-vectorimagehelpers (= ${binary:Version}),
+         qt6-base-dev,
+         ${misc:Depends},
 Description: Qt 6 Lottie - development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the header development files used for building Qt 6
  applications using Qt Lottie libraries.
+
+Package: qt6-lottie-examples
+Architecture: any
+Multi-Arch: same
+Section: misc
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Qt 6 Lottie examples
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the examples for the Qt Lottie submodule.

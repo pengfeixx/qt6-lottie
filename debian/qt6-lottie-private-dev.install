@@ -1,0 +1,4 @@
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtLottie/*/QtLottie/private/*.h
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_lottie_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_lottievectorimagegenerator_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_lottievectorimagehelpers_private.pri

@@ -1,0 +1,6 @@
+usr/lib/${DEB_HOST_MULTIARCH}/libQt6Lottie.so.6
+usr/lib/${DEB_HOST_MULTIARCH}/libQt6Lottie.so.6.*
+usr/lib/${DEB_HOST_MULTIARCH}/libQt6LottieVectorImageGenerator.so.6
+usr/lib/${DEB_HOST_MULTIARCH}/libQt6LottieVectorImageGenerator.so.6.*
+usr/lib/${DEB_HOST_MULTIARCH}/libQt6LottieVectorImageHelpers.so.6
+usr/lib/${DEB_HOST_MULTIARCH}/libQt6LottieVectorImageHelpers.so.6.*
